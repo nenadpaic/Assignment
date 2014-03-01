@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Assignment - Rad sa tekstom</title>
+<meta name="description" content="Rad sa textom u Javascripu" />
+<meta name="author" content="Nenad Paic" />
+
+</head>
+
+<body>
+
+
+<script>
+var s = 'First JavaScript string.';
+
+var c = ' This is second text.'
+
+
+var text = s.concat(c);
+
+document.write('<h2>');
+
+for (i = 0; i < text.length; i++) { 
+
+
+
+if(i%2 == 0){
+	var slovo = text.charAt(i);
+	var crveno = slovo.fontcolor("red")
+	document.write(crveno);
+	
+	
+	
+	
+	}else{
+	var slovo = text.charAt(i);
+	document.write(slovo);
+	
+	
+	}
+}
+document.write('</h2>');
+</script>
+
+
+
+
+</body>
+</html>
